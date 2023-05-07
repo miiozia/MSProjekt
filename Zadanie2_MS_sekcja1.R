@@ -1,4 +1,10 @@
 #Zadanie 2
+#Wczytanie danych z pliku .csv
+wyniki <- read.csv("data/data.csv")
+
+#Podział na grupy
+grupa1 <- subset(wyniki,Group == 1)$Score
+grupa2 <- subset(wyniki,Group == 2)$Score
 
 install.packages("nortest")
 
